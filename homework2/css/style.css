@@ -1,8 +1,18 @@
 * {
     font-family: 'Lucida Grande', sans-serif;
     padding: 0;
-    color: #ffffff;
     background-color: #000000;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 h1 {
@@ -21,8 +31,7 @@ p {
 }
 
 img {
-    display: inline;
-    position: relative;
+    height: 525px;
     width: 525px;
 }
 
