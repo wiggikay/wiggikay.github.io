@@ -1,0 +1,130 @@
+/*STARTER CODE*/
+
+/*
+We have started some of the selectors for you.
+For others we have provided hints on what the selectors should be.
+There are some missing selectors.
+
+Make sure to learn what the starter code does!!
+*/
+
+body{
+  color: #000000;
+  font-size: 16px;
+  margin: 1.2em;
+  font-family: 'Andika', sans-serif;
+  background-image: url("images/pigeon-background.JPEG");
+  background-size: cover ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color:  #DDDDDD;
+}
+
+
+main{
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  color: #c12258;
+  font-size: 2em;
+  text-align: center;
+  line-height: 2;
+}
+
+caption{
+  margin: 5px 0px;
+}
+
+p {
+  padding: 15px 0px 0px 0px;
+}
+
+*:focus {
+  border: 3px dashed #417243;
+}
+
+a {
+  font-size: 16px;
+  color: #C12258;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+}
+
+table{
+    border: 2px solid #000000;
+}
+
+.colhead{
+  background-color: #7e0820;
+  color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+th, td {
+  text-align: center;
+  border-top: 2px solid #000000;
+  padding: 10px;
+}
+
+.rowhead{
+  border-right: 2px solid #000000;
+}
+
+tr:nth-child(even) {
+  background-color: #D1D1D1;
+}
+
+tr:hover {
+  background-color: rgba(126, 8, 32, .25);
+}
+
+thead {
+  border-radius: 10px 10px 0px 0px;
+}
+
+thead > tr {
+  border-radius: 10px 10px 0px 0px;
+}
+
+tbody {
+  border-radius: 0px 0px 10px 10px;
+}
+
+tbody > tr:last-child {
+  border-radius: 0px 0px 10px 10px;
+}
+
+.colhead:first-child {
+  border-radius: 10px 0px 0px 0px;
+}
+
+.colhead:last-child {
+  border-radius: 0px 10px 0px 0px;
+}
+
+tr:last-child > .rowhead {
+  border-radius: 0px 0px 0px 10px;
+}
+
+table {
+  border-radius: 10px;
+}
+
+
+footer{
+  min-height: 75px;
+  width:100%;
+  background:#000000;
+  text-align:center;
+  color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+}
+
