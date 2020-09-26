@@ -53,7 +53,7 @@ p {
 
 a {
   font-size: 16px;
-  color: #C12258;
+  color: #B21F50;
   text-decoration-line: underline;
   text-decoration-style: wavy;
 }
@@ -67,7 +67,7 @@ table{
   color: #FFFFFF;
   min-width: 125px;
   padding: 10px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   text-align: center;
 }
 
@@ -119,6 +119,10 @@ tr:last-child > .rowhead {
 
 table {
   border-radius: 10px;
+}
+
+tbody > tr:last-child > td:last-child {
+  border-radius: 0px 0px 10px 0px;
 }
 
 
