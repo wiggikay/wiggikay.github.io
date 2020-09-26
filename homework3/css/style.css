@@ -11,7 +11,7 @@ Make sure to learn what the starter code does!!
 body{
   color: #000000;
   font-size: 16px;
-  margin: 1.2em;
+  /* margin: 1.2em; */
   font-family: 'Andika', sans-serif;
   background-image: url("images/pigeon-background.JPEG");
   background-size: cover ;
@@ -41,6 +41,10 @@ caption{
 
 p {
   padding: 15px 0px 0px 0px;
+}
+
+.datacite {
+  align-self: flex-start;
 }
 
 *:focus {
