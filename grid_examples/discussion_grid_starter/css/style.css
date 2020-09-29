@@ -1,0 +1,154 @@
+body{
+margin: 0;
+padding: 0;
+}
+
+h1{
+  font-size: 32px;
+  text-align: center;
+  line-height: 2;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto; /* I don't need this  line*/
+  margin: auto;
+  width: 95vw;
+}
+
+div{
+  overflow: hidden;
+}
+
+footer{
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  grid-column: 1 / -1;
+}
+
+
+
+/* Tablet layout */
+/* Four equal columns using fr*/
+/* Six rows of 350px and one of 100px*/
+@media screen and (min-width: 600px){
+  h1{
+    text-transform: uppercase;
+    color: #F00;
+  }
+
+  .img-one {
+    grid-area: leaves;
+  }
+  
+  .img-two {
+    grid-area: flowers;
+  }
+  
+  .img-four {
+    grid-area: fog;
+  }
+  
+  .img-five {
+    grid-area: beach;
+  }
+  
+  .img-three{
+    grid-area: lake;
+  }
+  
+  .img-six{
+    grid-area: turbine;
+  }
+  
+  .img-seven{
+    grid-area: trees;
+  }
+  
+  .img-eight{
+    grid-area: snowy;
+  }
+  
+  .img-nine{
+    grid-area: mountain;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(6, 350px) 100px;
+    grid-template-areas: 
+    "leaves leaves flowers flowers"
+    "lake lake lake lake"
+    "fog fog beach beach"
+    "turbine turbine turbine turbine"
+    "mountain mountain snowy snowy"
+    "trees trees trees trees"
+    ;
+  }
+
+}
+
+/* Desktop layout */
+/* Four equal columns using fr*/
+/* Five rows of 350px and one of 100px*/
+@media screen and (min-width: 1000px){
+  h1{
+    text-transform: lowercase;
+    color: #00F;
+  }
+
+  .img-one {
+    grid-area: leaves;
+  }
+  
+  .img-two {
+    grid-area: flowers;
+  }
+  
+  .img-four {
+    grid-area: fog;
+  }
+  
+  .img-five {
+    grid-area: beach;
+  }
+  
+  .img-three{
+    grid-area: lake;
+  }
+  
+  .img-six{
+    grid-area: turbine;
+  }
+  
+  .img-seven{
+    grid-area: trees;
+  }
+  
+  .img-eight{
+    grid-area: snowy;
+  }
+  
+  .img-nine{
+    grid-area: mountain;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(5, 350px) 100px;
+    grid-template-areas: 
+    "flowers flowers leaves leaves"
+    "flowers flowers lake lake"
+    "beach fog turbine mountain"
+    "snowy trees trees mountain"
+    "snowy trees trees mountain"
+    ;
+  }
+
+}

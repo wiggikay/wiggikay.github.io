@@ -1,0 +1,29 @@
+body{
+	font-size:200%;
+}
+
+.container{
+	border:1px solid black;
+	display:grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+header, footer{
+	border:1px solid black;
+	grid-column: 1 /-1;
+}
+section{
+	display:grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows:100px 150px 100px;
+	overflow:hidden;
+}
+
+img{
+	width:100%;
+	align-self: stretch;
+}
+
+img:nth-child(3){
+	grid-column: 1/3;
+}
