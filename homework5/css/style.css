@@ -81,7 +81,7 @@ footer{
 .pricing{
     min-height: 500px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -96,7 +96,6 @@ footer{
   border-radius: 7px;
   padding: 0 0 50px 0;
   /*Your code here.*/
-  width: 400px;
   flex-basis: 400px;
 
 }
@@ -195,7 +194,6 @@ header{
   }
 
   .card {
-    width: 225px;
     flex-basis: 225px;
   }
 
