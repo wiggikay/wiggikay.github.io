@@ -84,6 +84,7 @@ footer{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     /*Your code here.*/
     /*Don't forget to vertically and horizontally alight the card*/
   
@@ -96,9 +97,8 @@ footer{
   padding: 0 0 50px 0;
   /*Your code here.*/
   width: 400px;
-  /*Take a look at flex-basis
   flex-basis: 400px;
-*/
+
 }
 
 .card > header{
@@ -167,11 +167,12 @@ header{
   justify-content: center;
   align-items: center;
 }
-/*
+
 .nav_links{
-  
+  display: flex;
+  flex-direction: column;
 }
-*/
+
 .nav_item a{
   color: black;
   text-decoration: none;
@@ -190,6 +191,7 @@ header{
 
   .pricing {
     flex-direction: row;
+    flex-wrap: nowrap;
   }
 
   .card {
