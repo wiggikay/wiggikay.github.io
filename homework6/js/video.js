@@ -65,12 +65,12 @@ document.querySelector("#volumeSlider").addEventListener("change", function() {
 
 document.querySelector("#old").addEventListener("click", function() {
 	console.log('old school')
-	document.querySelector("#myVideo").style.filter = "grayscale(100%)";
+	document.querySelector("#myVideo").classList.add("oldTime");
 });
 
 document.querySelector("#original").addEventListener("click", function() {
 	console.log('normal')
-	document.querySelector("#myVideo").style.filter = "grayscale(0%)";
+	document.querySelector("#myVideo").classList.remove("oldTime");
 });
 
 
