@@ -9,6 +9,7 @@ document.querySelector("#play").addEventListener("click", function() {
 	console.log("Play Video");
 	if (video.paused) {
 		video.play();
+		document.querySelector("#volume").innerText = document.querySelector("#volumeSlider").value + "%";
 	}	
 });
 
@@ -60,6 +61,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 document.querySelector("#volumeSlider").addEventListener("change", function() {
 	let newVolume = 1 * (document.querySelector("#volumeSlider").value / 100);
 	video.volume = newVolume;
+	document.querySelector("#volume").innerText = document.querySelector("#volumeSlider").value + "%";
 	console.log(newVolume)
 });
 
