@@ -48,13 +48,12 @@ document.querySelector("#skip").addEventListener("click", function() {
 });
 
 document.querySelector("#mute").addEventListener("click", function() {
-	if (video.volume > 0) {
-		savedVolume = video.volume;
-		video.volume = 0;
-		document.querySelector("#mute").innerText = "Unmute";
-	} else {
-		video.volume = savedVolume;
+	if (video.muted == true) {
+		video.muted = false;
 		document.querySelector("#mute").innerText = "Mute";
+	} else {
+		video.muted = true;
+		document.querySelector("#mute").innerText = "Unmute";
 	}
 });
 
